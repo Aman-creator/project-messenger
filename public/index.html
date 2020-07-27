@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>chat-on</title>
+    <style>
+      
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background: green;
+        background-image: linear-gradient(90deg,green ,black);
+        color: cornsilk;
+        font-size: 30px;
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+      #button{
+         margin-left: 40%;
+         margin-top: 30px;
+         background-color: white;
+         color: black;
+         
+         outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container main">
+      <form action="chat.html" method="get">
+          <img src="user_default.png" alt="img" style="border-radius: 50%; margin-left: 20%; margin-top: -15%; ">
+        <div class="user">
+          <label for="username">user name</label><br>
+          <input type="text" style="padding-left: 10px; outline: none;" name="username" placeholder="enter username"  required />
+        </div>
+        <div class="room">
+          <label for="room">room</label><br>
+          <input type="text"  style="padding-left: 10px;  outline: none; " name="room" placeholder="enter room id" required/>
+        </div>
+        <button id="button" type="submit" >login</button>
+      </form>
+    </div>
+  </body>
+</html>
